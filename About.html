@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>À propos - Ma Boutique Beats</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="Licences.css">
+  <link rel="stylesheet" href="about.css">
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+  <!-- Navbar ici (identique à celle des autres pages) -->
+  <!-- ==================== -->
+  <!-- Barre de naviguation -->
+  <!-- ==================== -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="logo">
+        <img src="img/Logos/Logo.png" alt="Logo">
+      </a>
+      <ul>
+        <li><a href="index.html" >
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" viewBox="0 0 24 24"
+          style="display:inline-block; vertical-align:middle; margin-right:2px; transform: translateY(-1.8px);">
+       <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.06c1.48-.74 2.5-2.26 2.5-4.03zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/>
+     </svg>
+     Beats
+        </a>
+      </li>
+
+
+        <li>
+          <a href="licences.html" class="active">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" viewBox="0 0 24 24"
+            style="display:inline-block; vertical-align:middle; margin-right:1.5px; transform: translateY(-2.5px);">
+         <path d="M6 2a2 2 0 0 0-2 2v16c0 1.1.9 2 2 2h12a2 2 0 0 0 2-2V8l-6-6H6zm7 1.5L18.5 9H13a1 1 0 0 1-1-1V3.5zM8 13h8v1.5H8V13zm0-3h8v1.5H8V10zm0 6h5v1.5H8V16z"/>
+       </svg>
+       Licences
+          </a>
+        </li>
+
+
+        <li>
+          <a href="about.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" viewBox="0 0 24 24"
+            style="display:inline-block; vertical-align:middle; margin-right:2px; transform: translateY(-2px);">
+         <path d="M11 9h2V7h-2v2zm1-7C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18
+                  c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-3h2v-6h-2v6z"/>
+       </svg>
+       À propos
+       
+       
+          </a>
+        </li>
+
+
+
+
+        <li>
+          <a href="#" onclick="scrollToBottom()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" viewBox="0 0 24 24"
+            style="display:inline-block; vertical-align:middle; margin-right:2px; transform: translateY(-1.5px);">
+         <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16
+                  c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+       </svg>
+       Contact
+       
+          </a>
+        </li>
+
+
+
+
+
+
+
+
+      </ul>
+    </div>
+  </nav>
+
+
+
+
+
+
+
+
+
+
+<!-- Barre de navigation pour mobile -->
+<div class="mobile-only">
+  <button class="mobile-toggle" onclick="toggleMobileMenu()">
+    <span></span><span></span><span></span>
+  </button>
+  <a href="index.html" class="mobile-logo">
+    <img src="img/Logos/Logo.png" alt="Logo">
+  </a>
+</div>
+
+
+<!-- Menu latéral pour mobile -->
+<div class="mobile-slide-menu" id="mobileSlideMenu">
+  <a href="index.html">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" viewBox="0 0 24 24"
+    style="display:inline-block; vertical-align:middle; margin-right:2px; transform: translateY(-1.8px);">
+ <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.06c1.48-.74 2.5-2.26 2.5-4.03zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/>
+</svg>
+Beats</a>
+
+
+  <a href="licences.html">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" viewBox="0 0 24 24"
+    style="display:inline-block; vertical-align:middle; margin-right:1.5px; transform: translateY(-2.5px);">
+ <path d="M6 2a2 2 0 0 0-2 2v16c0 1.1.9 2 2 2h12a2 2 0 0 0 2-2V8l-6-6H6zm7 1.5L18.5 9H13a1 1 0 0 1-1-1V3.5zM8 13h8v1.5H8V13zm0-3h8v1.5H8V10zm0 6h5v1.5H8V16z"/>
+</svg>
+Licences</a>
+
+
+  <a href="about.html">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" viewBox="0 0 24 24"
+    style="display:inline-block; vertical-align:middle; margin-right:2px; transform: translateY(-2px);">
+ <path d="M11 9h2V7h-2v2zm1-7C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18
+          c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-3h2v-6h-2v6z"/>
+</svg>
+À propos</a>
+
+
+<div class="mobile-contact">
+  <span>
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--color-primary)" viewBox="0 0 24 24" style="vertical-align: middle;">
+      <path d="M6.62 10.79a15.07 15.07 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.11-.21c1.21.49 2.53.76 3.88.76a1 1 0 0 1 1 1v3.49a1 1 0 0 1-1 1C10.25 22.33 1.67 13.75 1.67 3a1 1 0 0 1 1-1H6.2a1 1 0 0 1 1 1c0 1.35.27 2.67.76 3.88a1 1 0 0 1-.21 1.11l-2.2 2.2z"/>
+    </svg>
+    <span style="margin-left: 5px;">06 12 34 56 78</span>
+  </span>
+  <span>
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--color-primary)" viewBox="0 0 24 24" style="vertical-align: middle;">
+      <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16
+               c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+    </svg>
+    <span style="margin-left: 5px;">contact@beatshop.fr</span>
+  </span>
+  <a href="https://instagram.com/getr_beat" target="_blank">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--color-primary)" viewBox="0 0 24 24" style="vertical-align: middle;">
+      <path d="M7.75 2C4.57 2 2 4.57 2 7.75v8.5C2 19.43 4.57 22 7.75 22h8.5C19.43 22 22 19.43 22 16.25v-8.5C22 4.57 19.43 2 16.25 2h-8.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm6.25-.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5zM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"/>
+    </svg>
+    <span style="margin-left: 5px;">@getr_beat</span>
+  </a>
+  <a href="https://youtube.com/@ta_chaine" target="_blank">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--color-primary)" viewBox="0 0 24 24" style="vertical-align: middle;">
+      <path d="M21.8 8.001c-.2-1.5-1.6-2.6-3.2-2.7C16.4 5.1 12 5.1 12 5.1s-4.4 0-6.6.2c-1.6.1-3 1.2-3.2 2.7-.2 1.7-.2 3.9-.2 3.9s0 2.2.2 3.9c.2 1.5 1.6 2.6 3.2 2.7 2.2.2 6.6.2 6.6.2s4.4 0 6.6-.2c1.6-.1 3-1.2 3.2-2.7.2-1.7.2-3.9.2-3.9s0-2.2-.2-3.9zM9.5 14.5v-5l5 2.5-5 2.5z"/>
+    </svg>
+    <span style="margin-left: 5px;">GETR Beat</span>
+  </a>
+</div>
+ 
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <section class="trusted-by">
+    <h2>Ils nous ont fait confiance</h2>
+    <div class="trusted-grid">
+      <div class="trusted-card">
+        <img src="img/Crédits/MZ.jpg" alt="Dehmo de la MZ">
+        <p>Dehmo de la MZ</p>
+        <a href="https://www.instagram.com/dehmo_kalina/" target="_blank">@dehmo_kalina</a>
+      </div>
+      <div class="trusted-card">
+        <img src="img/Crédits/Dasinga.jpg" alt="Dasinga">
+        <p>Dasinga</p>
+        <a href="https://instagram.com/dehmo" target="_blank">@Dasinga</a>
+      </div>
+    </div>
+  </section>
+ 
+ 
+
+
+  <section class="about-section">
+    <h1>À propos de moi</h1>
+
+
+    <p class="intro-text">
+      Producteur indépendant passionné, je compose des prods qui mélangent énergie, émotion et ambiance. J’ai lancé ce site pour permettre aux artistes de tous niveaux d’accéder facilement à des beats pro, droits clairs, et prêts à poser.
+    </p>
+
+
+    <div class="about-identity">
+      <img src="img/Logos/Logo.png" alt="Photo ou logo" class="about-photo">
+      <div class="about-tags">🎧 Drill • Trap • Mélodies sombres • Vibes studio • Passion</div>
+    </div>
+
+
+    <div class="about-values">
+      <h2>Ma vision</h2>
+      <p>
+        Chaque beat est construit avec une idée claire : déclencher une vibe, pas juste un son.  
+        Je préfère proposer peu, mais avec qualité.  
+        Je travaille pour que chaque instru puisse directement inspirer une plume.
+      </p>
+    </div>
+
+
+    <div class="about-why">
+      <h2>Pourquoi ce site ?</h2>
+      <p>
+        Pour éviter les plateformes surchargées et proposer une vraie expérience.  
+        Tu écoutes, tu vibes, tu télécharges.  
+        Tu veux bosser sur mesure ? Je suis dispo aussi.
+      </p>
+    </div>
+
+
+    <a href="index.html" class="about-cta">Découvrir les beats</a>
+  </section>
+
+
+
+
+  <footer class="mini-contact-footer">
+    <div class="contact-inline">
+      <span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--color-primary)" viewBox="0 0 24 24" style="vertical-align: middle;">
+          <path d="M6.62 10.79a15.07 15.07 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.11-.21c1.21.49 2.53.76 3.88.76a1 1 0 0 1 1 1v3.49a1 1 0 0 1-1 1C10.25 22.33 1.67 13.75 1.67 3a1 1 0 0 1 1-1H6.2a1 1 0 0 1 1 1c0 1.35.27 2.67.76 3.88a1 1 0 0 1-.21 1.11l-2.2 2.2z"/>
+        </svg>
+        <span style="margin-left: 5px;">06 12 34 56 78</span>
+      </span>
+      <span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--color-primary)" viewBox="0 0 24 24" style="vertical-align: middle;">
+          <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16
+                   c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+        </svg>
+        <span style="margin-left: 5px;">contact@beatshop.fr</span>
+      </span>
+      <a href="https://instagram.com/getr_beat" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--color-primary)" viewBox="0 0 24 24" style="vertical-align: middle;">
+          <path d="M7.75 2C4.57 2 2 4.57 2 7.75v8.5C2 19.43 4.57 22 7.75 22h8.5C19.43 22 22 19.43 22 16.25v-8.5C22 4.57 19.43 2 16.25 2h-8.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm6.25-.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5zM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"/>
+        </svg>
+        <span style="margin-left: 5px;">@getr_beat</span>
+      </a>
+      <a href="https://youtube.com/@ta_chaine" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--color-primary)" viewBox="0 0 24 24" style="vertical-align: middle;">
+          <path d="M21.8 8.001c-.2-1.5-1.6-2.6-3.2-2.7C16.4 5.1 12 5.1 12 5.1s-4.4 0-6.6.2c-1.6.1-3 1.2-3.2 2.7-.2 1.7-.2 3.9-.2 3.9s0 2.2.2 3.9c.2 1.5 1.6 2.6 3.2 2.7 2.2.2 6.6.2 6.6.2s4.4 0 6.6-.2c1.6-.1 3-1.2 3.2-2.7.2-1.7.2-3.9.2-3.9s0-2.2-.2-3.9zM9.5 14.5v-5l5 2.5-5 2.5z"/>
+        </svg>
+        <span style="margin-left: 5px;">GETR Beat</span>
+      </a>
+    </div>
+  </footer>
+ 
+
+
+  <script src="script.js"></script>
+  <script src="Licences.js"></script>
+
+
+
+
+</body>
+</html>
+
+
+
+
+

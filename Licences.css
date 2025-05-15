@@ -1,0 +1,301 @@
+.licence-title {
+  text-align: center;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 28px;
+  margin-top: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.licence-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 30px 0;
+}
+
+.licence-card {
+  width: 200px;
+  min-height: 350px; /* ou + selon le contenu */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* pousse le bouton en bas */
+  align-items: center;
+  padding: 20px;
+  margin: 0;
+  background: var(--color-primary);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  color: white;
+  font-family: 'Rajdhani', sans-serif;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+
+.AllBeats {
+  margin-top: 20px;
+  background-color: white;
+  color: var(--color-primary);
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+
+
+.licence-card.featured {
+  transform: scale(1.1);
+  border: 2px solid white;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 2;
+  margin: 0 15px;
+}
+.licence-card.mid {
+  transform: scale(1.05);
+  opacity: 0.9;
+  box-shadow: 0 5px 16px rgba(0,0,0,0.15);
+  z-index: 1;
+}
+
+
+
+
+
+
+
+
+.licence-details {
+  font-size: 15px;
+}
+
+
+
+
+
+
+
+
+.licence-faq {
+  max-width: 800px;
+  margin: 10px auto;
+  padding: 30px;
+  background: #f5f7fa;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.licence-faq h3 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 24px;
+  color: #111;
+}
+
+.licence-faq details {
+  margin-bottom: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 12px 16px;
+  background-color: white;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.licence-faq summary {
+  font-weight: bold;
+  font-size: 16px;
+  list-style: none;
+  position: relative;
+  padding-right: 25px;
+}
+
+.licence-faq summary::after {
+  content: '➕';
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+.licence-faq details[open] summary::after {
+  content: '➖';
+}
+
+.licence-faq p {
+  margin-top: 10px;
+  font-size: 15px;
+  color: #333;
+}
+
+
+.site-footer {
+  background-color: #1f2937; /* gris foncé classe */
+  color: #ccc;
+  padding: 30px 20px;
+  text-align: center;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 14px;
+  margin-top: 60px;
+}
+
+.site-footer a {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.site-footer a:hover {
+  color: #60A5FA;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1200px) {
+  .licence-grid {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 20px;
+    padding: 20px;
+    scroll-padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .licence-card {
+     padding: 10px;
+     min-height: 120px;
+     transition: min-height 0.3s ease;
+  }
+
+  .licence-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+
+  .licence-card.featured {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .licence-card p {
+    font-size: 14px;
+    margin-bottom: 18px;
+    line-height: 1.4;
+  }
+
+  .licence-card .AllBeats {
+    background-color: white;
+    color: var(--color-primary);
+    padding: 8px 16px;
+    border-radius: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 14px;
+    display: inline-block;
+  }
+
+  .licence-card .AllBeats:hover {
+    background-color: #e0e7ff;
+  }
+
+
+  .licence-details {
+    margin-top: 10px; /* 👈 espace sous le bouton */
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+  }
+ 
+  .licence-card.expanded .licence-details {
+    opacity: 1;
+    max-height: 500px; /* ← À ajuster si besoin */
+  }
+
+
+  .details-toggle {
+    background-color: white;
+    color: #2563EB;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+ 
+  .details-toggle:hover {
+    background-color: whitesmoke;
+  }
+
+
+  .licence-card .AllBeats {
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 1201px) {
+  .details-toggle {
+    display: none;
+  }
+}
+
+
+

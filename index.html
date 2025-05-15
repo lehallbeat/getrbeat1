@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <title>Ma Boutique Beats</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="licences.css">
+
+
+</head>
+<body>
+
+
+
+
+
+
+
+
+  <!-- ==================== -->
+  <!-- Barre de naviguation -->
+  <!-- ==================== -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="logo">
+        <img src="img/Logos/Logo.png" alt="Logo">
+      </a>
+      <ul>
+        <li><a href="index.html" class="active">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" viewBox="0 0 24 24"
+          style="display:inline-block; vertical-align:middle; margin-right:2px; transform: translateY(-1.8px);">
+       <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.06c1.48-.74 2.5-2.26 2.5-4.03zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/>
+     </svg>
+     Beats
+        </a>
+      </li>
+
+
+        <li>
+          <a href="licences.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" viewBox="0 0 24 24"
+            style="display:inline-block; vertical-align:middle; margin-right:1.5px; transform: translateY(-2.5px);">
+         <path d="M6 2a2 2 0 0 0-2 2v16c0 1.1.9 2 2 2h12a2 2 0 0 0 2-2V8l-6-6H6zm7 1.5L18.5 9H13a1 1 0 0 1-1-1V3.5zM8 13h8v1.5H8V13zm0-3h8v1.5H8V10zm0 6h5v1.5H8V16z"/>
+       </svg>
+       Licences
+          </a>
+        </li>
+
+
+        <li>
+          <a href="about.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" viewBox="0 0 24 24"
+            style="display:inline-block; vertical-align:middle; margin-right:2px; transform: translateY(-2px);">
+         <path d="M11 9h2V7h-2v2zm1-7C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18
+                  c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-3h2v-6h-2v6z"/>
+       </svg>
+       À propos
+       
+       
+          </a>
+        </li>
+
+
+
+
+        <li>
+          <a href="#" onclick="scrollToBottom()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" viewBox="0 0 24 24"
+            style="display:inline-block; vertical-align:middle; margin-right:2px; transform: translateY(-1.5px);">
+         <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16
+                  c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+       </svg>
+       Contact
+       
+          </a>
+        </li>
+
+
+
+
+      </ul>
+    </div>
+  </nav>
+
+
+
+
+
+
+ 
+
+
+
+
+<!-- Barre de navigation pour mobile -->
+<div class="mobile-only">
+  <button class="mobile-toggle" onclick="toggleMobileMenu()">
+    <span></span><span></span><span></span>
+  </button>
+  <a href="index.html" class="mobile-logo">
+    <img src="img/Logos/Logo.png" alt="Logo">
+  </a>
+</div>
+
+
+<!-- Menu latéral pour mobile -->
+<div class="mobile-slide-menu" id="mobileSlideMenu">
+  <a href="index.html">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" viewBox="0 0 24 24"
+    style="display:inline-block; vertical-align:middle; margin-right:2px; transform: translateY(-1.8px);">
+ <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.06c1.48-.74 2.5-2.26 2.5-4.03zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/>
+</svg>
+Beats</a>
+
+
+  <a href="licences.html">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" viewBox="0 0 24 24"
+    style="display:inline-block; vertical-align:middle; margin-right:1.5px; transform: translateY(-2.5px);">
+ <path d="M6 2a2 2 0 0 0-2 2v16c0 1.1.9 2 2 2h12a2 2 0 0 0 2-2V8l-6-6H6zm7 1.5L18.5 9H13a1 1 0 0 1-1-1V3.5zM8 13h8v1.5H8V13zm0-3h8v1.5H8V10zm0 6h5v1.5H8V16z"/>
+</svg>
+Licences</a>
+
+
+  <a href="about.html">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" viewBox="0 0 24 24"
+    style="display:inline-block; vertical-align:middle; margin-right:2px; transform: translateY(-2px);">
+ <path d="M11 9h2V7h-2v2zm1-7C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18
+          c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-3h2v-6h-2v6z"/>
+</svg>
+À propos</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="mobile-contact">
+  <span>
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--color-primary)" viewBox="0 0 24 24" style="vertical-align: middle;">
+      <path d="M6.62 10.79a15.07 15.07 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.11-.21c1.21.49 2.53.76 3.88.76a1 1 0 0 1 1 1v3.49a1 1 0 0 1-1 1C10.25 22.33 1.67 13.75 1.67 3a1 1 0 0 1 1-1H6.2a1 1 0 0 1 1 1c0 1.35.27 2.67.76 3.88a1 1 0 0 1-.21 1.11l-2.2 2.2z"/>
+    </svg>
+    <span style="margin-left: 5px;">06 12 34 56 78</span>
+  </span>
+  <span>
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--color-primary)" viewBox="0 0 24 24" style="vertical-align: middle;">
+      <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16
+               c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+    </svg>
+    <span style="margin-left: 5px;">contact@beatshop.fr</span>
+  </span>
+  <a href="https://instagram.com/getr_beat" target="_blank">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--color-primary)" viewBox="0 0 24 24" style="vertical-align: middle;">
+      <path d="M7.75 2C4.57 2 2 4.57 2 7.75v8.5C2 19.43 4.57 22 7.75 22h8.5C19.43 22 22 19.43 22 16.25v-8.5C22 4.57 19.43 2 16.25 2h-8.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm6.25-.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5zM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"/>
+    </svg>
+    <span style="margin-left: 5px;">@getr_beat</span>
+  </a>
+  <a href="https://youtube.com/@ta_chaine" target="_blank">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--color-primary)" viewBox="0 0 24 24" style="vertical-align: middle;">
+      <path d="M21.8 8.001c-.2-1.5-1.6-2.6-3.2-2.7C16.4 5.1 12 5.1 12 5.1s-4.4 0-6.6.2c-1.6.1-3 1.2-3.2 2.7-.2 1.7-.2 3.9-.2 3.9s0 2.2.2 3.9c.2 1.5 1.6 2.6 3.2 2.7 2.2.2 6.6.2 6.6.2s4.4 0 6.6-.2c1.6-.1 3-1.2 3.2-2.7.2-1.7.2-3.9.2-3.9s0-2.2-.2-3.9zM9.5 14.5v-5l5 2.5-5 2.5z"/>
+    </svg>
+    <span style="margin-left: 5px;">GETR Beat</span>
+  </a>
+</div>
+ 
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+<!-- ==================== -->
+<!-- Zone recherche + filtres -->
+<!-- ==================== -->
+<div class="search-zone">
+  <div class="search-bar-wrapper">
+    <div class="filter-group" title="Filtrer">
+      <span class="filter-label">Filtres</span>
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="#111111">
+        <path d="M10 18h4v-2h-4v2zm-7-6v2h18v-2H3zm3-6v2h12V6H6z"/>
+      </svg>
+              <path d="M3 4h18l-7 8v6l-4 2v-8L3 4z"/>
+      </svg>
+     
+      <path d="M15.5 14h-.79l-.28-.27a6.471 6.471 0 001.48-5.34C15.01 5.59 12.42 3 9.25 3S3.5 5.59 3.5 8.75 6.09 14.5 9.25 14.5c1.61 0 3.07-.59 4.22-1.57l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49 0s.41-1.08 0-1.49L15.5 14zm-6.25 0C7.01 14 5 11.99 5 9.75S7.01 5.5 9.25 5.5 13.5 7.51 13.5 9.75 11.49 14 9.25 14z"/>
+      </svg>
+    </div>
+    <input type="text" id="searchInput" placeholder="Rechercher un beat..." onkeyup="filterBeats()">
+  </div>
+
+
+  <div id="filtersPanel" class="filters-panel">
+    <div class="filter-dropdowns">
+ 
+      <!-- Genre -->
+      <div class="dropdown-group">
+        <label for="genreSelect"><strong>Genres</strong></label>
+        <select id="genreSelect">
+          <option value="all">– All Genres</option>
+          <option value="drill">Drill</option>
+          <option value="trap">Trap</option>
+          <option value="new wave">New Wave</option>
+          <option value="jersey">Jersey</option>
+        </select>
+      </div>
+ 
+      <!-- Mood -->
+      <div class="dropdown-group">
+        <label for="moodSelect"><strong>Moods</strong></label>
+        <select id="moodSelect">
+          <option value="all">– All Moods</option>
+          <option value="dark">Dark</option>
+          <option value="joyful">Joyful</option>
+          <option value="melancholy">Melancholy</option>
+        </select>
+      </div>
+ 
+      <!-- Tri par date -->
+      <div class="dropdown-group">
+        <label for="sortSelect"><strong>Trier</strong></label>
+        <select id="sortSelect" onchange="applyFilters()">
+          <option value="default">– Trier par défaut</option>
+          <option value="newest">Newest</option>
+          <option value="oldest">Oldest</option>
+        </select>
+      </div>
+ 
+    </div>
+  </div>
+ 
+
+
+
+
+  <p id="noResultMessage" style="display: none; text-align: center; color: #666; margin-top: 20px;">
+    Aucun beat trouvé.
+  </p>
+   
+ 
+
+
+
+
+  <!-- ==================== -->
+  <!-- Liste des beats -->
+  <!-- ==================== -->
+  <div class="beat-list">
+
+
+
+
+    <!-- BEAT 1 -->
+
+
+
+
+    <div class="beat"
+    data-src="mp3/boucherie-prod-getr-140bpm.mp3"
+    data-style="drill"
+    data-mood="dark"
+    data-date="2024-12-15">
+ 
+ <div class="beat-top">
+   <img src="img/Boucherie - Pochette Beatstars.png" alt="Pochette Beat">
+   
+   <div class="beat-main-info">
+     <h3>BOUCHERIE</h3>
+     <p>Drill</p>
+   </div>
+
+
+   <div class="beat-music-info">
+     <span><strong>Duration :</strong> 02:28</span>
+     <span><strong>Tempo :</strong> 146BPM</span>
+     <span><strong>Tags :</strong> #flamme #typebeat #Ysos</span>
+   </div>
+
+
+   <a href="https://gumroad.com" class="buy-button" target="_blank">Download</a>
+ </div>
+</div>
+
+
+    <!-- BEAT 2 -->
+
+
+
+
+    <div class="beat"
+    data-src="mp3/politicar.mp3"
+    data-style="trap"
+    data-mood="dark"
+    data-date="2024-12-15">
+ 
+ <div class="beat-top">
+   <img src="img/Politicar - Pochette Beatstars.png" alt="Pochette Beat">
+   
+   <div class="beat-main-info">
+     <h3>POLITICAR</h3>
+     <p>Trap</p>
+   </div>
+
+
+   <div class="beat-music-info">
+     <span><strong>Duration :</strong> ???</span>
+     <span><strong>Tempo :</strong> ???</span>
+     <span><strong>Tags :</strong> #Mafia #test #test</span>
+   </div>
+
+
+   <a href="https://gumroad.com" class="buy-button" target="_blank">Download</a>
+ </div>
+</div>
+
+
+    <!-- BEAT 3 -->
+
+
+
+
+    <div class="beat"
+    data-src="mp3/paw.mp3"
+    data-style="trap"
+    data-mood="dark"
+    data-date="2024-12-14">
+ 
+ <div class="beat-top">
+   <img src="img/Paw - Pochette Beatstars.png" alt="Pochette Beat">
+   
+   <div class="beat-main-info">
+     <h3>PAW</h3>
+     <p>Trap</p>
+   </div>
+
+
+   <div class="beat-music-info">
+     <span><strong>Duration :</strong> ???</span>
+     <span><strong>Tempo :</strong> ???</span>
+     <span><strong>Tags :</strong> #Banger #test #test</span>
+   </div>
+
+
+   <a href="https://gumroad.com" class="buy-button" target="_blank">Download</a>
+ </div>
+</div>
+
+
+    <!-- BEAT 4 -->
+
+
+
+
+    <div class="beat"
+    data-src="mp3/Sick-Cminor-136BPM.mp3"
+    data-style="Jersey"
+    data-mood="dark"
+    data-date="2024-12-20">
+ 
+ <div class="beat-top">
+   <img src="img/Sick-Pochette-Beatstars.png" alt="Pochette Beat">
+   
+   <div class="beat-main-info">
+     <h3>SICK</h3>
+     <p>Jersey</p>
+   </div>
+
+
+   <div class="beat-music-info">
+     <span><strong>Duration :</strong> ???</span>
+     <span><strong>Tempo :</strong> ???</span>
+     <span><strong>Tags :</strong> #Sample #test #test</span>
+   </div>
+
+
+   <a href="https://gumroad.com" class="buy-button" target="_blank">Download</a>
+ </div>
+</div>
+
+
+    <!-- BEAT 5 -->
+
+
+
+
+    <div class="beat"
+    data-src="mp3/boucherie-prod-getr-140bpm.mp3"
+    data-style="drill"
+    data-mood="dark"
+    data-date="2025-12-15">
+ 
+ <div class="beat-top">
+   <img src="img/Boucherie - Pochette Beatstars.png" alt="Pochette Beat">
+   
+   <div class="beat-main-info">
+     <h3>BOUCHERIE</h3>
+     <p>Drill</p>
+   </div>
+
+
+   <div class="beat-music-info">
+     <span><strong>Duration :</strong> 02:28</span>
+     <span><strong>Tempo :</strong> 146BPM</span>
+     <span><strong>Tags :</strong> #flamme #typebeat #Ysos</span>
+   </div>
+
+
+   <a href="https://gumroad.com" class="buy-button" target="_blank">Download</a>
+ </div>
+</div>
+ 
+
+
+
+
+  <!-- ==================== -->
+  <!-- Barre audio globale -->
+  <!-- ==================== -->
+
+
+
+
+  <div id="sexyPlayer">
+    <button id="playPauseBtn">
+      <div class="icon-wrapper">
+        <svg id="iconPlay" xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="var(--color-primary)" viewBox="0 0 24 24">
+          <path d="M8 5v14l11-7z"/>
+        </svg>
+        <svg id="iconPause" xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="var(--color-primary)" viewBox="0 0 24 24">
+          <path d="M6 5h4v14H6zm8 0h4v14h-4z"/>
+        </svg>
+      </div>
+    </button>
+    <span id="timeDisplay">0:00</span>
+    <input type="range" id="progress" value="0" min="0" max="100">
+    <input type="range" id="volume" min="0" max="1" step="0.01" value="1">
+  </div>
+ 
+  <audio id="mainAudio" src="" style="display:none;"></audio>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <footer class="mini-contact-footer">
+    <div class="contact-inline">
+      <span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--color-primary)" viewBox="0 0 24 24" style="vertical-align: middle;">
+          <path d="M6.62 10.79a15.07 15.07 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.11-.21c1.21.49 2.53.76 3.88.76a1 1 0 0 1 1 1v3.49a1 1 0 0 1-1 1C10.25 22.33 1.67 13.75 1.67 3a1 1 0 0 1 1-1H6.2a1 1 0 0 1 1 1c0 1.35.27 2.67.76 3.88a1 1 0 0 1-.21 1.11l-2.2 2.2z"/>
+        </svg>
+        <span style="margin-left: 5px;">06 12 34 56 78</span>
+      </span>
+      <span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--color-primary)" viewBox="0 0 24 24" style="vertical-align: middle;">
+          <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16
+                   c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+        </svg>
+        <span style="margin-left: 5px;">contact@beatshop.fr</span>
+      </span>
+      <a href="https://instagram.com/getr_beat" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--color-primary)" viewBox="0 0 24 24" style="vertical-align: middle;">
+          <path d="M7.75 2C4.57 2 2 4.57 2 7.75v8.5C2 19.43 4.57 22 7.75 22h8.5C19.43 22 22 19.43 22 16.25v-8.5C22 4.57 19.43 2 16.25 2h-8.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm6.25-.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5zM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"/>
+        </svg>
+        <span style="margin-left: 5px;">@getr_beat</span>
+      </a>
+      <a href="https://youtube.com/@ta_chaine" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--color-primary)" viewBox="0 0 24 24" style="vertical-align: middle;">
+          <path d="M21.8 8.001c-.2-1.5-1.6-2.6-3.2-2.7C16.4 5.1 12 5.1 12 5.1s-4.4 0-6.6.2c-1.6.1-3 1.2-3.2 2.7-.2 1.7-.2 3.9-.2 3.9s0 2.2.2 3.9c.2 1.5 1.6 2.6 3.2 2.7 2.2.2 6.6.2 6.6.2s4.4 0 6.6-.2c1.6-.1 3-1.2 3.2-2.7.2-1.7.2-3.9.2-3.9s0-2.2-.2-3.9zM9.5 14.5v-5l5 2.5-5 2.5z"/>
+        </svg>
+        <span style="margin-left: 5px;">GETR Beat</span>
+      </a>
+    </div>
+  </footer>
+ 
+ 
+ 
+
+
+
+
+<script src="script.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
